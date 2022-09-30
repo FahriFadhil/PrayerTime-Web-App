@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Time Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="icon" href="IMG/Logo.png">
+</head>
+<body>
+
+    <nav>
+        <section class="btn_location">
+            <i class="logo material-symbols-outlined">explore</i>
+            <input class="location_txt" list="city-list" value="KOTA BOGOR" id="input-city" placeholder="Nama Kota....">
+            <datalist id="city-list">
+                
+            </datalist>
+            <img src="https://c.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" id="loadingIcon">
+        </section>
+        
+        <section class="clock_widget">
+            <h1 class="time_txt" id="timeNow">
+                <div id="hourToday">-</div>
+                :
+                <div id="minuteToday">-</div>
+            </h1>
+            <div></div>
+            <h2 class="date_txt" id="dateNow">Thursday, 22 September 2022</h2>
+        </section>
+    </nav>
+
+    <section class="next_event">
+        <p class="next_time" id="nextEvent">Next Event : </p>
+        <p class="estimated_time" id="estimatedNextEvent">-</p>
+    </section>
+
+    <main>
+        <h2 class="schedule_heading">Today Prayer Schedule</h2>
+        <div></div>
+        <section class="fajr_time forecast_widget">
+            <p class="title_forecast">Fajr</p>
+            <p class="time_forecast" id="fajrTime">- : -</p>
+        </section>
+        <div></div>
+        <section class="sunrise_time forecast_widget">
+            <p class="title_forecast">Sunrise</p>
+            <p class="time_forecast" id="sunriseTime">- : -</p>
+        </section>
+        <div></div>
+        <section class="dhuhr_time forecast_widget next_time">
+            <p class="title_forecast">Dhuhr</p>
+            <p class="time_forecast" id="dhuhrTime">- : -</p>
+        </section>
+        <div></div>
+        <section class="asr_time forecast_widget">
+            <p class="title_forecast">Asr</p>
+            <p class="time_forecast" id="asrTime">- : -</p>
+        </section>
+        <div></div>
+        <section class="maghrib_time forecast_widget">
+            <p class="title_forecast">Maghrib</p>
+            <p class="time_forecast" id="maghribTime">- : -</p>
+        </section>
+        <div></div>
+        <section class="isya_time forecast_widget">
+            <p class="title_forecast">Isya</p>
+            <p class="time_forecast" id="isyaTime">- : -</p>
+        </section>
+    </main>
+
+</body>
+<script src="JS/index.js" type="module"></script>
+</html>
